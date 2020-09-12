@@ -1,0 +1,154 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content='')
+		meta(name='author', content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
+		meta(name='generator', content='Jekyll v4.1.1')
+		title Meetdex
+		link(rel='stylesheet', type='text/css', href='/static/css/flaticon.css')
+		link(rel='canonical', href='https://getbootstrap.com/docs/4.5/examples/carousel/')
+		link(href='/static/css/reset.css', rel='stylesheet')
+		// Bootstrap core CSS
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/static/css/carousel.css', rel='stylesheet')
+		link(href='/static/css/styles.css', rel='stylesheet')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+		// Custom styles for this template
+	body
+		header
+			nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+				a.navbar-brand(href='index') Meetdex
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#navbarCollapse.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item.active
+							a.nav-link(href='index')
+								| Inicio 
+								span.sr-only (current)
+						li.nav-item
+							a.nav-link(href='index#nosotros') Nosotros
+						li.nav-item.dropdown
+							a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Cursos
+							.dropdown-menu(aria-labelledby='dropdown01')
+								a.dropdown-item(href='meet') Meet
+								a.dropdown-item(href='zoom') Zoom
+								a.dropdown-item(href='teams') Microsoft Teams
+								hr
+								a.dropdown-item(href='catalogo') Otros cursos
+					ul.navbar-nav.navbar-right
+						li
+							a.nav-link(href='singin') Registrarse
+						li
+							a.nav-link(href='login') Iniciar Sesion
+		main(role='main')
+			//
+				Marketing messaging and featurettes
+				==================================================
+			// Wrap the rest of the page in another container to center all the content.
+			.container.marketing
+				// START THE FEATURETTES
+				.row.featurette.tp40
+					.col-md-5
+						.cont-cuadro
+							.cont-imp
+								.cont-imagen
+									img(src='/static/img/Zoom.jpg', alt='')
+								.titulo
+									h3
+										| Curso de 
+										span Zoom 
+								.cont-boton.card-login
+									a.btn.btn-primary(href='catalogo') Comprar
+						img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500', height='500', src='/static/img/cursos.jpg', preserveaspectratio='xMidYMid slice', focusable='false', role='img', aria-label='Placeholder: 500x500')
+						title Placeholder
+					.col-md-7
+						.descripcion
+							.cont-titulo
+								h2
+									i.fas.fa-play
+									|  Acerca del curso
+								.cont-texto
+									p Curso formativo para aprender Zoom desde 0 hasta avanzado.
+							.info-curso
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Lo que aprenderas
+								.cont-texto
+									ul
+										li
+											i.fas.fa-check
+											|  Crear y transmitir tus videoreuniones
+										li Como usar Zoom para dar clases virtuales
+										li Como grabar automáticamente tus reuniones de Zoom como anfitrión y participante
+										li Compartir una pizarra virtual en las reuniones
+										li Compartir archivos multimedia con tus contactos
+										li Integrar Zoom con los Servicios de Google
+										li Crear canales de comunicación
+										li Como usar Zoom desde tu celular
+										li Cuándo y dónde es mejor utilizar los planes premium de Zoom
+							.requisitos
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Requisitos
+								.cont-texto
+									ul
+										li
+											i.fas.fa-greater-than
+											|  Una laptop o computadora con conexión a internet
+										li
+											i.fas.fa-greater-than
+											|  Una cámara web o digital
+										li
+											i.fas.fa-greater-than
+											|  Un micrófono
+										li
+											i.fas.fa-greater-than
+											|  Tener un navegador instalado
+										li
+											i.fas.fa-greater-than
+											|  Conocimientos básicos de ofimática (Word, PowerPoint o Excel)
+										li
+											i.fas.fa-greater-than
+											|  Integrar Zoom con los Servicios de Google
+										li
+											i.fas.fa-greater-than
+											|  Un smartphone
+							.temas
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Temas a tratar
+								.cont-texto
+									ul
+										li
+											i.fas.fa-book-open
+											|   Introducción a Zoom
+										li Técnicas para realizar videoconferencias de calidad
+										li Iniciando en Zoom
+										li Configuración y opciones de Zoom
+										li Zoom versión escritorio
+										li Manejando Zoom Desktop
+										li Crear un canal grupal
+										li Uso de recursos multimedia en una reunión
+										li Zoom Premium
+										li Conclusiones
+				hr.featurette-divider
+				// /END THE FEATURETTES
+				// /.container
+				// FOOTER
+				footer
+					.container
+						p.float-right
+							a(href='#') Subir
+						p
+							| © Company 
+							a(href='index') Meetdeex
+		script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj', crossorigin='anonymous')
+		script.
+			window.jQuery || document.write('<script src="/static/lib/js/vendor/jquery.slim.min.js"><\\/script>')
+		script(src='/static/lib/bootstrap/js/bootstrap.bundle.min.js')

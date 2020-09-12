@@ -1,0 +1,349 @@
+doctype html
+html(lang='en', dir='ltr')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Meetdex
+		link(rel='stylesheet', href='/static/css/tienda-style.css')
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='/static/css/flaticon.css')
+		link(rel='stylesheet', href='/static/css/catalogo.css')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+		link(href='/static/css/perfil.css', rel='stylesheet')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', charset='utf-8')
+		script(type='text/javascript', src='http://code.jquery.com/jquery-1.11.1.min.js')
+	body
+		input#check(type='checkbox')
+		// header area start
+		header
+			label(for='check')
+				i#sidebar_btn.fas.fa-bars
+			.left_area
+				h3 Meetdex
+			.right_area
+				a.logout_btn(href='#') Cerrar Sesión
+		// header area end
+		// mobile navigation bar start
+		.mobile_nav
+			.nav_bar
+				img.mobile_profile_image(src='/static/img/user.png', alt='')
+				i.fa.fa-bars.nav_btn
+			.mobile_nav_items
+				a(href='videos')
+					i.fas.fa-desktop
+					span Videos
+				// <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+				a(href='tienda')
+					i.fas.fa-shopping-cart
+					span.counter Tienda
+				//
+					<a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+					<a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+					<a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+		// mobile navigation bar end
+		// sidebar start
+		.sidebar
+			.profile_info
+				img.profile_image(src='/static/img/user.png', alt='')
+				h4 Ándres
+			a(href='videos')
+				i.fas.fa-desktop
+				span Videos
+			// <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+			a(href='tienda')
+				i.fas.fa-shopping-cart
+				span.counter Cursos
+			//
+				<a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+				<a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+				<a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+		// sidebar end
+		.content.container
+			.row.tp40
+				.col-lg-3
+					// BLOQUE DE GOOGLE MEET
+					.product--green
+						.product_inner
+							img.mobile_profile_image(src='https://www.uc3m.es/sdic/media/informatica/img/mediana/original/im_hangouts-meet/logohangouts.png')
+							h2 Google Meet
+							h3 Precio $3.90
+							form
+								p.clasificacion
+									input#radio1a(type='radio', name='estrellas', value='5')
+									// 
+									label(for='radio1a') ★
+									// 
+									input#radio2a(type='radio', name='estrellas', value='4')
+									// 
+									label(for='radio2a') ★
+									// 
+									input#radio3a(type='radio', name='estrellas', value='3')
+									// 
+									label(for='radio3a') ★
+									// 
+									input#radio4a(type='radio', name='estrellas', value='2')
+									// 
+									label(for='radio4a') ★
+									// 
+									input#radio5a(type='radio', name='estrellas', value='1')
+									// 
+									label(for='radio5a') ★
+							div(data-id='id02', data-price='3.90', data-title='Google Meet', data-img='https://www.uc3m.es/sdic/media/informatica/img/mediana/original/im_hangouts-meet/logohangouts.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE MICROSOFT TEAMS
+					.product--purple
+						.product_inner
+							img.mobile_profile_image(src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png')
+							h2 Microsoft Teams
+							h3 Precio $3.90
+							form
+								p.clasificacion
+									input#radio1b(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1b') ★
+									//
+									input#radio2b(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2b') ★
+									//
+									input#radio3b(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3b') ★
+									//
+									input#radio4b(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4b') ★
+									//
+									input#radio5b(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5b') ★
+							div(data-id='id03', data-price='3.90', data-title='Microsoft Teams', data-img='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE ZOOM
+					.product--gray
+						.product_inner
+							img.mobile_profile_image(src='https://www.vumc.org/pmi/sites/default/files/public_files/Images/Zoom%20logo.png')
+							h2 Zoom
+							h3 Precio $3.90
+							form
+								p.clasificacion
+									input#radio1c(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1c') ★
+									//
+									input#radio2c(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2c') ★
+									//
+									input#radio3c(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3c') ★
+									//
+									input#radio4c(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4c') ★
+									//
+									input#radio5c(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5c') ★
+							div(data-id='id04', data-price='3.90', data-title='Zoom', data-img='https://www.vumc.org/pmi/sites/default/files/public_files/Images/Zoom%20logo.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE CISCO WEBEX
+					.product--lightblue
+						.product_inner
+							img.mobile_profile_image(src='https://www.webex.com/content/dam/wbx/us/images/cisco-webex-meeting-icon-189.png')
+							h2 Cisco Webex
+							h3 Precio $5.99
+							form
+								p.clasificacion
+									input#radio1d(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1d') ★
+									//
+									input#radio2d(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2d') ★
+									//
+									input#radio3d(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3d') ★
+									//
+									input#radio4d(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4d') ★
+									//
+									input#radio5d(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5d') ★
+							div(data-id='id05', data-price='5.99', data-title='Cisco Webex', data-img='https://www.webex.com/content/dam/wbx/us/images/cisco-webex-meeting-icon-189.png')
+							span.add-to-cart Añadir al carrito
+			.row.tp15
+				.col-lg-3
+					// BLOQUE DE GOOGLE CLASSROOM
+					.product--yellow
+						.product_inner
+							img(src='https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/google-classroom.png', width='150')
+							h2 Google Classroom
+							h3 Precio $5.99
+							form
+								p.clasificacion
+									input#radio1e(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1e') ★
+									//
+									input#radio2e(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2e') ★
+									//
+									input#radio3e(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3e') ★
+									//
+									input#radio4e(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4e') ★
+									//
+									input#radio5e(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5e') ★
+							div(data-id='id06', data-price='5.99', data-title='Google Classroom', data-img='https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/google-classroom.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE MICROSOFT WORD
+					.product--blue
+						.product_inner
+							img(src='https://cdn.iconscout.com/icon/free/png-256/microsoft-word-1411849-1194338.png', width='270')
+							h2 Microsoft Word
+							h3 Precio $2.99
+							form
+								p.clasificacion
+									input#radio6f(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio6f') ★
+									//
+									input#radio7f(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio7f') ★
+									//
+									input#radio8f(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio8f') ★
+									//
+									input#radio9f(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio9f') ★
+									//
+									input#radio5f(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5f') ★
+							div(data-id='id07', data-price='2.99', data-title='Microsoft Word', data-img='https://cdn.iconscout.com/icon/free/png-256/microsoft-word-1411849-1194338.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE MICROSOFT EXCEL
+					.product--green
+						.product_inner
+							img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Microsoft_Office_Excel_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282018%E2%80%93present%29.svg.png', width='250')
+							h2 Microsoft Excel
+							h3 Precio $2.99
+							form
+								p.clasificacion
+									input#radio1g(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1g') ★
+									//
+									input#radio2g(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2g') ★
+									//
+									input#radio3g(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3g') ★
+									//
+									input#radio4g(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4g') ★
+									//
+									input#radio5g(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5g') ★
+							div(data-id='id08', data-price='2.99', data-title='Microsoft Excel', data-img='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Microsoft_Office_Excel_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282018%E2%80%93present%29.svg.png')
+							span.add-to-cart Añadir al carrito
+				.col-lg-3
+					// BLOQUE DE C++
+					.product--blue
+						.product_inner
+							img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png', width='140')
+							h2 Curso Básico: C++
+							h3 Precio $2.99
+							form
+								p.clasificacion
+									input#radio1h(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1h') ★
+									//
+									input#radio2h(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2h') ★
+									//
+									input#radio3h(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3h') ★
+									//
+									input#radio4h(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4h') ★
+									//
+									input#radio5h(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5h') ★
+							div(data-id='id09', data-price='2.99', data-title='Curso Básico: C++', data-img='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/911px-ISO_C%2B%2B_Logo.svg.png')
+							span.add-to-cart Añadir al carrito
+			.row.tp15
+				.col-lg-12
+					// BLOQUE DE JAVA
+					.product--orange
+						.product_inner
+							img(src='http://media.idownloadblog.com/wp-content/uploads/2016/05/java-icon.png', width='100')
+							h2 Curso Básico: Java
+							h3 Precio $3.90
+							form
+								p.clasificacion
+									input#radio1i(type='radio', name='estrellas', value='5')
+									//
+									label(for='radio1i') ★
+									//
+									input#radio2i(type='radio', name='estrellas', value='4')
+									//
+									label(for='radio2i') ★
+									//
+									input#radio3i(type='radio', name='estrellas', value='3')
+									//
+									label(for='radio3i') ★
+									//
+									input#radio4i(type='radio', name='estrellas', value='2')
+									//
+									label(for='radio4i') ★
+									//
+									input#radio5i(type='radio', name='estrellas', value='1')
+									//
+									label(for='radio5i') ★
+							div(data-id='id10', data-price='3.90', data-title='Curso Básico: Java', data-img='http://media.idownloadblog.com/wp-content/uploads/2016/05/java-icon.png')
+							span.add-to-cart Añadir al carrito
+		script(type='text/javascript').
+			$(document).ready(function(){
+			$('.nav_btn').click(function(){
+			$('.mobile_nav_items').toggleClass('active');
+			});
+			});
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.22/webfontloader.js')
+		script(src='/static/js/tienda-script.js')

@@ -1,0 +1,138 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content='')
+		meta(name='author', content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
+		meta(name='generator', content='Jekyll v4.1.1')
+		title Meetdex
+		link(rel='canonical', href='https://getbootstrap.com/docs/4.5/examples/carousel/')
+		link(href='/static/css/reset.css', rel='stylesheet')
+		// Bootstrap core CSS
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/static/css/carousel.css', rel='stylesheet')
+		link(href='/static/css/styles.css', rel='stylesheet')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+		link(rel='stylesheet', type='text/css', href='/static/css/flaticon.css')
+		// Custom styles for this template
+	body
+		header
+			nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+				a.navbar-brand(href='/') Meetdex
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#navbarCollapse.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item.active
+							a.nav-link(href='/')
+								| Inicio 
+								span.sr-only (current)
+						li.nav-item
+							a.nav-link(href='/#nosotros') Nosotros
+						li.nav-item.dropdown
+							a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Cursos
+							.dropdown-menu(aria-labelledby='dropdown01')
+								a.dropdown-item(href='meet') Meet
+								a.dropdown-item(href='zoom') Zoom
+								a.dropdown-item(href='teams') Microsoft Teams
+								hr
+								a.dropdown-item(href='catalogo') Otros cursos
+					ul.navbar-nav.navbar-right
+						li
+							a.nav-link(href='signup') Registrarse
+						li
+							a.nav-link(href='signin') Iniciar Sesion
+		main(role='main')
+			//
+				Marketing messaging and featurettes
+				==================================================
+			// Wrap the rest of the page in another container to center all the content.
+			.container.marketing
+				// START THE FEATURETTES
+				.row.featurette.tp40
+					.col-md-5
+						.cont-cuadro
+							.cont-imp
+								.cont-imagen
+									img(src='/static/img/Teams.jpg', alt='')
+								.titulo
+									h3
+										| Curso de 
+										span Miscrosoft Teams 
+								.cont-boton.card-login
+									a.btn.btn-primary(href='catalogo') Comprar
+						img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500', height='500', src='/static/img/cursos.jpg', preserveaspectratio='xMidYMid slice', focusable='false', role='img', aria-label='Placeholder: 500x500')
+						title Placeholder
+					.col-md-7
+						.descripcion
+							.cont-titulo
+								h2
+									i.fas.fa-play
+									|  Acerca del curso
+								.cont-texto
+									p Curso formativo para aprender Microsfot Teams desde 0 hasta avanzado.
+							.info-curso
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Lo que aprenderas
+								.cont-texto
+									ul
+										li
+											i.fas.fa-check
+											|  Centralizar, simplificar y gestionar todos tus trabajos de Office 365 con Miscrosoft Teams
+										li Crear y personalizar tu ambiente de trabajo virtual
+										li Crear y administrar grupos y usuarios en Microsoft Teams
+										li Administrar la privacidad de grupos y usuarios en Teams
+										li Crear ambientes de colaboración a distancia
+							.requisitos
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Requisitos
+								.cont-texto
+									ul
+										li
+											i.fas.fa-greater-than
+											|  Una laptop o computadora con conexión a internet estable
+										li Una cámara web o digital
+										li Un micrófono
+										li Tener un navegador instalado
+										li Conocimientos básicos de ofimática (Word, PowerPoint o Excel)
+										li Tener una cuenta de Microsoft
+										li Un smartphone
+							.temas
+								.cont-titulo
+									h2
+										i.flaticon-button
+										|  Temas a tratar
+								.cont-texto
+									ul
+										li
+											i.fas.fa-book-open
+											|    Introducción a MS Teams
+										li Primeros pasos en Teams
+										li Conociendo el entorno de MS Teams
+										li  Manejo de grupos en Teams
+										li Adjuntar y compartir documentos en Teams
+										li Organizar reuniones en Teams
+										li El chat en Teams
+										li Aplicaciones personalizadas para Teams
+										li Teams para dispositivos móviles
+										li Conclusiones
+				hr.featurette-divider
+				// /END THE FEATURETTES
+				// /.container
+				// FOOTER
+				footer
+					.container
+						p.float-right
+							a(href='#') Subir
+						p
+							| © Company 
+							a(href='/') Meetdeex
+		script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj', crossorigin='anonymous')
+		script.
+			window.jQuery || document.write('<script src="/static/lib/js/vendor/jquery.slim.min.js"><\\/script>')
+		script(src='public/lib/bootstrap/js/bootstrap.bundle.min.js')

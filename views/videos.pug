@@ -1,0 +1,117 @@
+doctype
+html(lang='en', dir='ltr')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Meetdex
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='/static/fonts/flaticon.css')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+		link(href='/static/css/perfil.css', rel='stylesheet')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', charset='utf-8')
+		script(type='text/javascript', src='http://code.jquery.com/jquery-1.11.1.min.js')
+	body
+		input#check(type='checkbox')
+		// header area start
+		header
+			label(for='check')
+				i#sidebar_btn.fas.fa-bars
+			.left_area
+				h3 Meetdex
+			.right_area
+				a.logout_btn(href='#') Cerrar Sesión
+		// header area end
+		// mobile navigation bar start
+		.mobile_nav
+			.nav_bar
+				img.mobile_profile_image(src='/static/img/user.png', alt='')
+				i.fa.fa-bars.nav_btn
+			.mobile_nav_items
+				a(href='videos')
+					i.fas.fa-desktop
+					span Videos
+				// <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+				a(href='tienda')
+					i.fas.fa-shopping-cart
+					span.counter Tienda
+				//
+					<a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+					<a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+					<a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+		// mobile navigation bar end
+		// sidebar start
+		.sidebar
+			.profile_info
+				img.profile_image(src='/static/img/user.png', alt='')
+				h4 Ándres
+			a(href='videos')
+				i.fas.fa-desktop
+				span Videos
+			// <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+			a(href='tienda')
+				i.fas.fa-shopping-cart
+				span.counter Cursos
+			//
+				<a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+				<a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+				<a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+		// sidebar end
+		.content
+			.row
+				.col-lg-6.vlila
+					#video1.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 1
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+				.col-lg-6.vblanco
+					#video2.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 2
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+			.row
+				.col-lg-6.vblanco
+					#video3.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 3
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+				.col-lg-6.vlila
+					#video4.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 4
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+			.row
+				.col-lg-6.vlila
+					#video5.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 5
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+				.col-lg-6.vblanco
+					#video6.video-01
+						h2.display-5
+							i.flaticon-button
+							|  Video 6
+						p.lead Google meet
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src='https://www.youtube.com/embed/fjLbn2KxeCc', allowfullscreen='')
+		script(type='text/javascript').
+			$(document).ready(function(){
+			$('.nav_btn').click(function(){
+			$('.mobile_nav_items').toggleClass('active');
+			});
+			});

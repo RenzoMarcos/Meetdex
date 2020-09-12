@@ -1,0 +1,61 @@
+doctype html
+html
+	head
+		// Karakter encoding
+		meta(charset='utf-8')
+		//
+			Perintah agar lebar viewport mengikuti lebar perangkat
+			dan skala mengikuti ukuran ketika web di-load
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+		title Meetdex
+		// Load bootstrap stylesheet
+		link(href='/static/css/login.css', rel='stylesheet')
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/static/css/carousel.css', rel='stylesheet')
+		link(href='/static/css/styles.css', rel='stylesheet')
+		// Load login stylesheet
+		link(rel='stylesheet', href='/static/css/login.css')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+	body
+		.container-fluid
+			.card.card-login
+				.card-body
+					.row.justify-content-center
+						.col-lg-6.col-md-12
+							.padding.bg-primary.text-center.align-items-center.d-flex
+								#particles-js
+								.w-100
+									.logo.mb-4
+										img.img-fluid(src='img/kodinger.jpg', alt='kodinger logo')
+									h4.text-light.mb-2 Don't waste your time
+									p.lead.text-light Inicie sesión rápidamente como responder un mensaje.
+									button.btn.btn-block.btn-icon.btn-icon-google.mb-3
+										| Iniciar con Google
+								.help-links
+									ul
+										li
+											a(href='#') Terms of Service
+										li
+											a(href='#') Privacy Policy
+						.col-lg-6.col-md-12
+							.padding
+								h2 Iniciar Sesion
+								p.lead
+									| Antes de comenzar, debe iniciar sesión o registrarse si aún no tiene una
+									| cuenta.
+								form(autocomplete='off')
+									.form-group
+										label(for='username') Usuario
+										input#username.form-control(type='text', name='username', tabindex='1')
+									.form-group
+										label.d-block(for='password')
+											| Contraseña
+											.float-right
+												a(href='#') ¿Olvidaste tu contraseña?
+										input#password.form-control(type='password', name='password', tabindex='2')
+									.form-group.text-right
+										.float-left.mt-2
+											// REGISTRARSE REDIRECCIONAR
+											a(href='signup') ¿Crear cuenta?
+										button.btn.btn-primary(href='perfil', tabindex='3')
+											| Iniciar Sesion

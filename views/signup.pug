@@ -1,0 +1,99 @@
+doctype html
+html
+	head
+		// Karakter encoding
+		meta(charset='utf-8')
+		//
+			Perintah agar lebar viewport mengikuti lebar perangkat
+			dan skala mengikuti ukuran ketika web di-load
+		meta(name='viewport' content='width=device-width,initial-scale=1')
+		title Meetdex
+		// Load bootstrap stylesheet
+		link(rel='stylesheet' href='/static/lib/bootstrap/css/bootstrap.min.css')
+		// Load login stylesheet
+		link(rel='stylesheet' href='/static/css/login.css')
+		link(rel='icon' href='Imagenes/favicon2.png' type='image/png')
+		link(rel='stylesheet', type='text/css', href='/static/css/flaticon.css')
+	body
+		.container-fluid#app
+			.card.card-login
+				.card-body
+					.row.justify-content-center
+						.col-lg-6.col-md-12
+							.padding.bg-primary.text-center.align-items-center.d-flex
+								#particles-js
+								.w-100
+									.logo.mb-4
+										img.img-fluid(src='img/kodinger.jpg' alt='kodinger logo')
+									h4.text-light.mb-2 Don't waste your time
+									p.lead.text-light Registrese de manera rapida.
+									button.btn.btn-block.btn-icon.btn-icon-google.mb-3
+										| Iniciar con Google
+								.help-links
+									ul
+										li
+											a(href='#') Terms of Service
+										li
+											a(href='#') Privacy Policy
+						.col-lg-6.col-md-12
+							.padding
+								h2 Registrarse
+								//
+									#region
+									<p class="lead">Antes de comenzar, debe iniciar sesión o registrarse si aún no tiene una
+									cuenta.</p>
+								form(autocomplete='off')
+									.form-group
+										label(for='username') Usuario
+										input#username.form-control(v-model="user.name" type='text' name='username' tabindex='1')
+									// CAMPO IGUAL A ANTERIOR
+									// CAMBIAR CAMPOS
+									.form-group
+										label(for='username') E-mail
+										input#username.form-control(v-model="user.email" type='text' name='e' tabindex='1')
+									.form-group
+										label.d-block(for='password')
+											| Contraseña
+											//
+												<div class="float-right">
+												<a href="#">¿Olvidaste tu contraseña?</a>
+												</div>
+										input#password.form-control(v-model="user.password" type='password' name='password' tabindex='2')
+									.form-group
+										label.d-block(for='password')
+											| Confirmar Contraseña
+											//
+												<div class="float-right">
+												<a href="#">¿Olvidaste tu contraseña?</a>
+												</div>
+										input#password.form-control(type='password' name='password' tabindex='2')
+									.form-group.text-right
+										.float-left.mt-2
+											// REGISTRARSE REDIRECCIONAR
+											a(href='login.html') Iniciar Sesion
+										input.btn.btn-primary(type="button" tabindex='3' @click="signup" value="Registrarse")
+		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
+		script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+		script.
+			var app = new Vue({
+				el: '#app',
+				data: {
+					user: {
+						name: '',
+						email: '',
+						password: ''
+					}
+				},
+				methods: {
+					signup() {
+						axios.post('/user', {
+							command: 'REGISTER_USER',
+							transaction: this.user
+						})
+							.then(resp => {
+								const response = resp.data
+								console.log(response)
+							})
+					}
+				}
+			})

@@ -1,0 +1,222 @@
+
+  
+  
+  header1 {
+    width: 95%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
+  }
+  header1 ul1 {
+    padding: 1.2em 0 0.5em;
+  }
+  header1 span {
+    padding: 0 0 0 0.5em;
+  }
+  header1 span, header1 i {
+    color: #2B2D42;
+  }
+  header1 i:nth-of-type(2) {
+    cursor: pointer;
+  }
+  
+  .row {
+    width: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .product, .product--blue,.product--lightblue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink, .product--purple, .product--gray {
+    box-shadow: 1px 5px 15px rgb(128 106 138);
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    padding: 2em 0em;
+    margin: 0em;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: auto;
+  }
+  .product--blue {
+    background: linear-gradient(-45deg, #5792ff 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--lightblue {
+    background: linear-gradient(-45deg, #92DCE5 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  
+  .product--orange {
+    background: linear-gradient(-45deg, #fd8a55 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--red {
+    background: linear-gradient(-45deg, #f5953c 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--green {
+    background: linear-gradient(-45deg, #70C1B3 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--yellow {
+    background: linear-gradient(-45deg, #E8DB7D 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--pink {
+    background: linear-gradient(-45deg, #FF386D 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--purple {
+    background: linear-gradient(-45deg, #a99bfc 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+   .product--gray {
+    background: linear-gradient(-45deg, #89badb 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product img, .product--blue img,.product--lightblue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img  ,.product--purple img, .product--gray img{
+    width: 100px;
+        height: 100px;
+    left: 10px;
+    right: 20px;
+    bottom: 50px;
+    flex: auto;
+   
+  }
+  .product_inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
+  }
+  .product_inner p {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .product_inner button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border-radius: 3px;
+padding: 1em 3em;
+    font-size: 14px;
+    margin: 1em 0 0 0;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: background ease-in .25s;
+    transition: background ease-in .25s;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+.product_inner button:hover {
+    background: white;
+    color: #806a8a;
+
+}
+.product_inner h2 {
+    font-size: 1.3rem;
+}
+.product_inner h3 {
+    font-size: 1.1rem;
+}
+.product_inner button:before {
+    font-family: "Flaticon";
+    content: "\f1cd";
+    color: #FFF;
+    position: absolute;
+    font-size: 1.5em;
+    margin: -6px -1.5em;
+}
+.product_inner button:hover:before {
+    color: #806a8a;
+}
+  .product_overlay {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .product_overlay h2 {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  .product_overlay i {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.5em;
+  }
+  .center {
+    position: absolute;
+    left: 10px;
+    right: 20px;
+    bottom: 50px;
+  }
+  .product_inner h1 {
+    color: rgba(48, 53, 52, 0.9);
+    font-family: Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
+   /* font­size: 16px;
+    font­size: 1rem;*/
+    
+  
+  }
+.tp15{
+    padding-top: 15px;
+}
+
+  /*estrellas catalogo*/
+
+  #form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+

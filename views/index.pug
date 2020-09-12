@@ -1,0 +1,173 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content='')
+		meta(name='author', content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
+		meta(name='generator', content='Jekyll v4.1.1')
+		title Meetdex
+		link(rel='canonical', href='https://getbootstrap.com/docs/4.5/examples/carousel/')
+		link(href='/static/css/reset.css', rel='stylesheet')
+		// Bootstrap core CSS
+		link(href='/static/lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/static/css/carousel.css', rel='stylesheet')
+		link(href='/static/css/styles.css', rel='stylesheet')
+		link(rel='icon', href='/static/img/favicon2.png', type='image/png')
+		link(rel='stylesheet', type='text/css', href='/static/css/flaticon.css')
+		// Custom styles for this template
+	body
+		header
+			nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+				a.navbar-brand(href='/') Meetdex
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#navbarCollapse.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item.active
+							a.nav-link(href='/')
+								| Inicio 
+								span.sr-only (current)
+						li.nav-item
+							a.nav-link(href='/#nosotros') Nosotros
+						li.nav-item.dropdown
+							a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Cursos
+							.dropdown-menu(aria-labelledby='dropdown01')
+								a.dropdown-item(href='meet') Meet
+								a.dropdown-item(href='zoom') Zoom
+								a.dropdown-item(href='teams') Microsoft Teams
+								hr
+								a.dropdown-item(href='catalogo') Otros cursos
+					ul.navbar-nav.navbar-right
+						li
+							a.nav-link(href='signup') Registrarse
+						li
+							a.nav-link(href='signin') Iniciar Sesion
+		main(role='main')
+			#myCarousel.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#myCarousel', data-slide-to='0')
+					li(data-target='#myCarousel', data-slide-to='1')
+					li(data-target='#myCarousel', data-slide-to='2')
+				.carousel-inner
+					.carousel-item.active
+						img.bd-placeholder-img(width='100%', height='100%', src='/static/img/banner1.jpeg', preserveaspectratio='xMidYMid slice', focusable='false', role='img')
+						rect(width='100%', height='100%', fill='#777')
+							.container
+								.carousel-caption.text-left
+					.carousel-item
+						img.bd-placeholder-img(width='100%', height='100%', src='/static/img/banner2.jpeg', preserveaspectratio='xMidYMid slice', focusable='false', role='img')
+						rect(width='100%', height='100%', fill='#777')
+							.container
+								.carousel-caption
+					.carousel-item
+						img.bd-placeholder-img(width='100%', height='100%', src='/static/img/banner3.jpeg', preserveaspectratio='xMidYMid slice', focusable='false', role='img')
+						rect(width='100%', height='100%', fill='#777')
+							.container
+								.carousel-caption.text-right
+				a.carousel-control-prev(href='#myCarousel', role='button', data-slide='prev')
+					span.carousel-control-prev-icon(aria-hidden='true')
+					span.sr-only Previous
+				a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
+					span.carousel-control-next-icon(aria-hidden='true')
+					span.sr-only Next
+			//
+				Marketing messaging and featurettes
+				==================================================
+			// Wrap the rest of the page in another container to center all the content.
+			.container.marketing
+				// Three columns of text below the carousel
+				.row
+					.col-lg-12.centrar
+						h2 Aprende herramientas de Meeting de forma sencilla con Meetdex.
+					// /.col-lg-4
+					.col-lg-4
+						// BANNER UNO
+						aside.responsive-banner.first
+							#Seccion1.container-envelope
+								svg.cirle-a(height='160', width='160')
+									circle(cx='80', cy='80', r='80')
+								svg.cirle-b(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								svg.cirle-c(height='600', width='600')
+									circle(cx='300', cy='300', r='300')
+								svg.cirle-d(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								img(src='/static/img/mmm1.png')
+								.col-xs-12
+									p
+										| CURSO DE MICROSOFT
+										| TEAMS
+									// FALTA REDIRECCION VER MAS
+									a.more-link(target='_blank', href='teams') Ver mas
+					// /.col-lg-4
+					.col-lg-4
+						// BANNER DOS
+						aside.responsive-banner.second
+							.container-envelope
+								svg.cirle-a(height='160', width='160')
+									circle(cx='80', cy='80', r='80')
+								svg.cirle-b(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								svg.cirle-c(height='600', width='600')
+									circle(cx='300', cy='300', r='300')
+								svg.cirle-d(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								img(src='/static/img/mmm2.png')
+								.col-xs-12
+									p CURSO DE MEET 
+									a.more-link(target='_blank', href='meet') VER MÁS
+					// /.col-lg-4
+					.col-lg-4
+						aside.responsive-banner.third
+							.container-envelope
+								svg.cirle-a(height='160', width='160')
+									circle(cx='80', cy='80', r='80')
+								svg.cirle-b(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								svg.cirle-c(height='600', width='600')
+									circle(cx='300', cy='300', r='300')
+								svg.cirle-d(height='60', width='60')
+									circle(cx='30', cy='30', r='30')
+								img(src='/static/img/mmm1.png')
+								.col-xs-12
+									p CURSO DE ZOOM
+									a.more-link(target='_blank', href='zoom') VER MÁS
+					// /.col-lg-4
+					// /.row
+					// START THE FEATURETTES
+					hr#nosotros.featurette-divider
+					.row.featurette
+						.col-md-7
+							h2.featurette-heading
+								| Sobre 
+								span.text-muted Meetdex
+							p.lead
+								| Es desarrollado con el fin de brindar una plataforma de capacitación en
+								| plataformas meeting para trabajadores de empresas y estudiantes de instituciones
+								| educativas.
+							p
+								| En los últimos años, el uso de plataformas educativas digitales por parte de las empresas e
+								| instituciones ha crecido exponencialmente debido a la preferencia de los usuarios por
+								| estas plataformas a otros métodos de aprendizaje convencionales gracias a la poca
+								| necesidad de recursos para su utilización además de ahorrar tiempo, recursos, permitir el
+								| trabajo colaborativo y poder tener horarios flexibles.
+							p
+						.col-md-5
+							img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500', height='500', src='/static/img/nosotros.png', preserveaspectratio='xMidYMid slice', focusable='false', role='img', aria-label='Placeholder: 500x500')
+							title Placeholder
+					hr.featurette-divider
+					// /END THE FEATURETTES
+					// /.container
+					// FOOTER
+					footer
+						.container
+							p.float-right
+								a(href='#') Subir
+							p
+								| © Company 
+								a(href='index.html') Meetdeex
+		script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj', crossorigin='anonymous')
+		script.
+			window.jQuery || document.write('<script src="/static/lib/js/vendor/jquery.slim.min.js"><\\/script>')
+		script(src='/static/lib/bootstrap/js/bootstrap.bundle.min.js')

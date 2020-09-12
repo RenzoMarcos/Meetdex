@@ -1,0 +1,145 @@
+.root{
+    --red:#ff2e63;
+    --black:#252a34;
+    --blue:#08d9d6;
+    --white:#eaeaea;
+}
+section.curso {
+    margin-top: 30px;
+  }
+  
+  .curso .contenedor {
+    display: grid;
+    grid-template-areas: "compra" "informacion";
+    grid-gap: 20px;
+  }
+  
+  .curso .contenedor .cont-cuadro {
+    grid-area: compra;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp {
+    background: var(--blanco);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-imagen {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-imagen img {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-titulo {
+    margin-bottom: 20px;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-titulo h2 {
+    display: inline;
+    text-align: justify;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-titulo small {
+    display: inline;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-boton {
+    width: 100%;
+  }
+  
+  .curso .contenedor .cont-cuadro .cont-imp .cont-boton a {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 170px;
+    height: 40px;
+    background: linear-gradient(150deg, rgb(171, 130, 184),rgb(122, 206, 212),rgb(245, 201, 135));
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+  
+  
+  
+
+
+    border-radius: 24px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  @keyframes BgGradient {
+    0% {background-position:0% 50%};
+    50% {background-position:100% 50%};
+    100% {background-position:0% 50%};
+    }
+    
+  .curso .contenedor .cont-cuadro .cont-imp .cont-boton > a:hover{
+    background:cadetblue;
+}
+  .curso .contenedor .descripcion {
+    margin-top: 20px;
+    grid-area: informacion;
+  }
+  
+  .curso .contenedor .descripcion .cont-titulo .cont-texto p{
+      color: black;
+      text-transform: none;
+      text-align: justify;
+  }
+  .curso .contenedor .descripcion > div {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--black);
+  }
+  
+  .curso .contenedor .descripcion > div:last-child {
+    margin-bottom: 0px;
+    border-bottom: none;
+  }
+  
+  .curso .contenedor .descripcion > div .cont-texto {
+    margin-top: 10px;
+  }
+  
+  .curso .contenedor .descripcion .cont-texto li {
+    list-style: none;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+  
+  .curso .contenedor .descripcion .cont-texto li i {
+      color: var(--primario);
+      margin-right: 10px;
+  }
+  
+  
+  
+  @media screen and (min-width: 700px) {
+    .curso .contenedor {
+      display: grid;
+      grid-template-areas: "compra informacion";
+      grid-template-rows: 100%;
+      grid-template-columns: 300px auto;
+      grid-gap: 20px;
+    }
+  
+    .curso .contenedor .cont-cuadro .cont-imp {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 30px;
+    }
+
+    
+}
+
+      
